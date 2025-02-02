@@ -3,13 +3,19 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://noahfreger.github.io/recipes/",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
+    "@mui/material": "6.4.2",
+    "@mui/icons-material": "6.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
