@@ -1,7 +1,5 @@
-import Blog from "./pages/Blog";
+import { Blog } from "./pages/Blog";
 
-function App() {
+export const App = () => {
   return <Blog />;
-}
-
-export default App;
+};
